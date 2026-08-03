@@ -1,199 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nurse's On Call | Home Nursing Services Jaipur</title>
+
 <style>
-.booking-box {
-  max-width: 450px;
-  margin: 30px auto;
-  padding: 25px;
-  background: #f8faff;
-  border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+*{
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
 }
 
-.booking-box h2 {
-  text-align: center;
-  color: #0077b6;
+body{
+  margin:0;
+  background:#f4fbff;
+  color:#333;
 }
 
-.booking-box input,
-.booking-box textarea,
-.booking-box select {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0 15px;
-  border-radius: 10px;
-  border: 1px solid #bde0fe;
+header{
+  background:linear-gradient(135deg,#0077b6,#00b4d8);
+  color:white;
+  padding:25px 15px;
+  text-align:center;
 }
 
-.booking-box button {
-  width: 100%;
-  padding: 14px;
-  background: #0077b6;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 16px;
+.logo{
+  font-size:30px;
+  font-weight:bold;
+}
+
+header p{
+  font-size:16px;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:20px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  margin:20px 0;
+  border-radius:20px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.12);
+}
+
+h2{
+  color:#0077b6;
+  text-align:center;
+}
+
+.btn{
+  display:block;
+  text-align:center;
+  background:#0077b6;
+  color:white;
+  padding:14px;
+  border-radius:12px;
+  text-decoration:none;
+  margin-top:15px;
+}
+
+.service{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+}
+
+.service div{
+  flex:1;
+  min-width:200px;
+  background:#e8f8ff;
+  padding:15px;
+  border-radius:15px;
+}
+
+input,textarea,select{
+  width:100%;
+  padding:12px;
+  margin:8px 0 15px;
+  border-radius:10px;
+  border:1px solid #ccc;
+}
+
+button{
+  width:100%;
+  padding:14px;
+  background:#0077b6;
+  color:white;
+  border:none;
+  border-radius:12px;
+  font-size:17px;
+}
+
+footer{
+  background:#023e8a;
+  color:white;
+  text-align:center;
+  padding:15px;
+}
+
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:#25d366;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  font-size:25px;
 }
 </style>
+
 </head>
-<script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('service-worker.js');
-}
-</script>
 
 <body>
 
-
-</div>
-</div>
 <header>
-<div class="container">
-
-<div class="logo">
-<h2>🏥 Nurse's On Call</h2>
-</div>
-
-<nav>
-
-<a href="#">Home</a>
-
-<a href="#services">Services</a>
-
-<a href="#about">About</a>
-
-<a href="#contact">Contact</a>
-
-<a class="book-btn" href="https://wa.me/918949100258">
-Book Now
-</a>
-
-</nav>
-
-</div>
+<div class="logo">👩‍⚕️ Nurse's On Call</div>
+<p>Professional Home Nursing Services Jaipur</p>
 </header>
 
-<section class="hero">
-
-<div class="overlay">
-<h1>Professional Home Nursing Care at Your Doorstep</h1>
-
-<p>24×7 Experienced Nursing Staff Available in Jaipur</p>
-
-<div class="buttons">
-
-<a class="call" href="tel:8949100258">📞 Call Now</a>
-
-<a class="whatsapp" href="https://wa.me/918949100258">💬 WhatsApp</a>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="services">
-
+<div class="container">
+<!-- Services -->
+<div class="card">
 <h2>Our Services</h2>
 
-<div class="grid">
-
-<div class="card">👩‍⚕️ Home Nursing</div>
-
-<div class="card">💉 Injection</div>
-
-<div class="card">🩹 Dressing</div>
-
-<div class="card">🛏 ICU Care</div>
-
-<div class="card">👴 Elder Care</div>
-
-<div class="card">👶 Baby Care</div>
-
-<div class="card">🧑‍🦽 Bedridden Patient</div>
-
-<div class="card">🩺 Physiotherapy</div>
-
+<div class="service">
+<div>🏥 Patient Care at Home</div>
+<div>💉 Injection & Medicine Support</div>
+<div>👵 Elderly Care Nursing</div>
+<div>🚑 Emergency Nurse Visit</div>
+</div>
 </div>
 
-</section>
 
-<section id="contact">
+<!-- Patient Booking -->
+<div class="card">
 
-<h2>Contact Us</h2>
-
-<p>📞 8949100258</p>
-
-<p>📍 Jaipur, Rajasthan</p>
-
-<a class="book-btn" href="https://wa.me/918949100258">
-Book Through WhatsApp
-</a>
-
-</section>
-
-<footer>
-
-<p>
-
-© 2026 Nurse's On Call | All Rights Reserved
-
-</p>
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/918949100258" class="whatsapp-float">💬</a>
-
-
-</footer>
-<div class="booking-box">
 <h2>Patient Nurse Booking</h2>
 
 <form>
-<label>Patient Name:</label><br>
-<input type="text" placeholder="Enter name"><br><br>
 
-<label>Mobile Number:</label><br>
-<input type="tel" placeholder="Enter mobile number"><br><br>
+<label>Patient Name</label>
+<input type="text" placeholder="Enter patient name">
 
-<label>Address:</label><br>
-<textarea placeholder="Enter address"></textarea><br><br>
+<label>Mobile Number</label>
+<input type="tel" placeholder="Enter mobile number">
 
-<label>Patient Problem:</label><br>
-<textarea placeholder="Describe problem"></textarea><br><br>
+<label>Address</label>
+<textarea placeholder="Enter full address"></textarea>
 
-<label>Select Date:</label><br>
-<input type="date"><br><br>
+<label>Patient Problem</label>
+<textarea placeholder="Describe problem"></textarea>
 
-<label>Select Time:</label><br>
-<input type="time"><br><br>
+<label>Select Date</label>
+<input type="date">
 
-<button type="submit">Book Nurse</button>
+<label>Select Time</label>
+<input type="time">
+
+<button>Book Nurse</button>
+
 </form>
+
 </div>
+
+
+<!-- Nurse Registration -->
+<div class="card">
+
 <h2>Nurse Registration</h2>
 
 <form>
-<label>Nurse Name:</label><br>
-<input type="text" placeholder="Enter nurse name"><br><br>
 
-<label>Mobile Number:</label><br>
-<input type="tel" placeholder="Enter mobile number"><br><br>
+<label>Nurse Name</label>
+<input type="text" placeholder="Enter nurse name">
 
-<label>Qualification:</label><br>
+<label>Mobile Number</label>
+<input type="tel" placeholder="Enter mobile number">
+
+<label>Qualification</label>
 <select>
 <option>ANM</option>
 <option>GNM</option>
 <option>B.Sc Nursing</option>
 <option>M.Sc Nursing</option>
-</select><br><br>
+</select>
 
-<label>Experience:</label><br>
-<input type="text" placeholder="Years of experience"><br><br>
+<label>Experience</label>
+<input type="text" placeholder="Experience years">
 
-<label>Location:</label><br>
-<input type="text" placeholder="City/Area"><br><br>
+<label>Location</label>
+<input type="text" placeholder="City/Area">
 
-<button type="submit">Register Nurse</button>
+<button>Register Nurse</button>
+
 </form>
+
+</div>
+
+
+<a class="btn" href="tel:+918949100258">
+📞 Call Nurse Support
+</a>
+
+</div>
+
+
+<a class="whatsapp" href="https://wa.me/918949100258">
+💬
+</a>
+
+
+<footer>
+<p>© 2026 Nurse's On Call | All Rights Reserved</p>
+</footer>
+
+
 </body>
 </html>
