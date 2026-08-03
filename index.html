@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><style>
+.booking-box {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 400px;
+  background: white;
+  border-radius: 10px;
+}
+
+.booking-box input,
+.booking-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.booking-box button {
+  padding: 10px 20px;
+}
+</style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nurse's On Call | Home Nursing Services Jaipur</title>
@@ -16,7 +35,7 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('service-worker.js');
 }
 </script>
-<body>
+<body><div class="booking-box">
 <h2>Patient Nurse Booking</h2>
 
 <form>
@@ -39,7 +58,7 @@ if ('serviceWorker' in navigator) {
   <input type="time"><br><br>
 
   <button type="submit">Book Nurse</button>
-</form>
+</form></div>
 <header>
 <div class="container">
 
