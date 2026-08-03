@@ -28,7 +28,37 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+.booking-box {
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
 
+.booking-box h2 {
+  text-align: center;
+}
+
+.booking-box input,
+.booking-box textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.booking-box button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+</style>
 </head>
 <script>
 if ('serviceWorker' in navigator) {
@@ -138,6 +168,7 @@ Book Through WhatsApp
 
 
 </footer>
+<div class="booking-box">
 <h2>Patient Nurse Booking</h2>
 
 <form>
@@ -161,6 +192,6 @@ Book Through WhatsApp
 
 <button type="submit">Book Nurse</button>
 </form>
-
+</div>
 </body>
 </html>
