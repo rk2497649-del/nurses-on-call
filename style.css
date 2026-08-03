@@ -1,0 +1,131 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f9fc;
+color:#222;
+}
+
+header{
+background:#0b6efd;
+padding:18px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.container{
+width:90%;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo h2{
+color:#fff;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+}
+
+.book-btn{
+background:#25D366;
+padding:10px 18px;
+border-radius:30px;
+color:#fff !important;
+text-decoration:none;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,80,160,.6),rgba(0,80,160,.6)),
+url("https://images.unsplash.com/photo-1584515933487-779824d29309?w=1600") center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.overlay h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.overlay p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.buttons a{
+padding:15px 30px;
+margin:10px;
+display:inline-block;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.call{
+background:#0b6efd;
+color:#fff;
+}
+
+.whatsapp{
+background:#25D366;
+color:#fff;
+}
+
+#services{
+padding:70px 8%;
+}
+
+#services h2{
+text-align:center;
+font-size:36px;
+margin-bottom:40px;
+color:#0b6efd;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+font-size:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+#contact{
+padding:70px;
+background:#0b6efd;
+color:white;
+text-align:center;
+}
+
+footer{
+background:#082c61;
+color:white;
+text-align:center;
+padding:20px;
+}
