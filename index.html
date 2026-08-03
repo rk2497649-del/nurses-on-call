@@ -1,225 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nurse's On Call | Home Nursing Services Jaipur</title>
+<title>Nurse's On Call | Home Nursing Services Bharatpur</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
+
 *{
-  box-sizing:border-box;
-  font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
 }
 
 body{
-  margin:0;
-  background:#f4fbff;
-  color:#333;
+background:#f4fbff;
+color:#123;
 }
 
 header{
-  background:linear-gradient(135deg,#0077b6,#00b4d8);
-  color:white;
-  padding:25px 15px;
-  text-align:center;
+background:linear-gradient(135deg,#0077b6,#00b4d8,#00a896);
+color:white;
+padding:35px 20px;
+text-align:center;
 }
 
-.logo{
-  font-size:30px;
-  font-weight:bold;
+header h1{
+font-size:38px;
 }
 
 header p{
-  font-size:16px;
+font-size:18px;
+margin-top:8px;
 }
 
-.container{
-  max-width:900px;
-  margin:auto;
-  padding:20px;
+
+.hero{
+background:white;
+padding:50px 20px;
+text-align:center;
 }
 
-.card{
-  background:white;
-  padding:25px;
-  margin:20px 0;
-  border-radius:20px;
-  box-shadow:0 5px 20px rgba(0,0,0,0.12);
+.hero h2{
+font-size:34px;
+color:#0077b6;
 }
 
-h2{
-  color:#0077b6;
-  text-align:center;
+.hero span{
+color:#00a896;
 }
+
+.hero p{
+margin:20px 0;
+font-size:18px;
+}
+
 
 .btn{
-  display:block;
-  text-align:center;
-  background:#0077b6;
-  color:white;
-  padding:14px;
-  border-radius:12px;
-  text-decoration:none;
-  margin-top:15px;
-}
-
-.service{
-  display:flex;
-  flex-wrap:wrap;
-  gap:15px;
-}
-
-.service div{
-  flex:1;
-  min-width:200px;
-  background:#e8f8ff;
-  padding:15px;
-  border-radius:15px;
-}
-
-input,textarea,select{
-  width:100%;
-  padding:12px;
-  margin:8px 0 15px;
-  border-radius:10px;
-  border:1px solid #ccc;
-}
-
-button{
-  width:100%;
-  padding:14px;
-  background:#0077b6;
-  color:white;
-  border:none;
-  border-radius:12px;
-  font-size:17px;
-}
-
-footer{
-  background:#023e8a;
-  color:white;
-  text-align:center;
-  padding:15px;
+display:inline-block;
+padding:15px 28px;
+margin:10px;
+border-radius:30px;
+background:#0077b6;
+color:white;
+text-decoration:none;
+font-weight:bold;
 }
 
 .whatsapp{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  background:#25d366;
-  color:white;
-  padding:15px;
-  border-radius:50%;
-  font-size:25px;
+background:#25d366;
 }
+
+
+.section{
+padding:45px 20px;
+}
+
+
+.title{
+text-align:center;
+font-size:30px;
+color:#0077b6;
+margin-bottom:30px;
+}
+
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 8px 25px #0002;
+}
+
+
+.card i{
+font-size:45px;
+color:#00a896;
+margin-bottom:15px;
+}
+
+
+.card h3{
+color:#0077b6;
+margin-bottom:10px;
+}
+
+
+.card:hover{
+transform:translateY(-8px);
+transition:.3s;
+}
+
+
 </style>
 
 </head>
 
 <body>
 
+
 <header>
-<div class="logo">👩‍⚕️ Nurse's On Call</div>
-<p>Professional Home Nursing Services Jaipur</p>
+
+<h1>🩺 Nurse's On Call</h1>
+
+<p>Professional Home Nursing Services</p>
+
+<p>Bharatpur, Rajasthan</p>
+
 </header>
 
-<div class="container">
-<!-- Services -->
+
+
+<section class="hero">
+
+<h2>Your Health, Our <span>Care</span></h2>
+
+<p>
+Trusted nursing care at your doorstep by trained healthcare professionals.
+</p>
+
+
+<a class="btn" href="tel:8949100258">
+<i class="fa fa-phone"></i>
+Call Now
+</a>
+
+
+<a class="btn whatsapp" href="https://wa.me/918949100258">
+<i class="fab fa-whatsapp"></i>
+WhatsApp
+</a>
+
+
+</section>
+
+
+
+<section class="section">
+
+
+<h2 class="title">
+Our Services & Procedures
+</h2>
+
+
+<div class="cards">
+
+
 <div class="card">
-<h2>Our Services</h2>
-
-<div class="service">
-<div>🏥 Patient Care at Home</div>
-<div>💉 Injection & Medicine Support</div>
-<div>👵 Elderly Care Nursing</div>
-<div>🚑 Emergency Nurse Visit</div>
-</div>
+<i class="fa-solid fa-user-nurse"></i>
+<h3>Home Nursing Care</h3>
+<p>
+Elderly care, bedridden patient care, post hospital care and vital monitoring.
+</p>
 </div>
 
 
-<!-- Patient Booking -->
+<div class="card">
+<i class="fa-solid fa-syringe"></i>
+<h3>Injection & IV Care</h3>
+<p>
+IM, IV, SC injections and IV fluid care as per doctor's advice.
+</p>
+</div>
+
+
+<div class="card">
+<i class="fa-solid fa-kit-medical"></i>
+<h3>Wound Dressing</h3>
+<p>
+Surgical dressing, wound care and bed sore management.
+</p>
+</div>
+
+
+<div class="card">
+<i class="fa-solid fa-heart-pulse"></i>
+<h3>Health Monitoring</h3>
+<p>
+BP, Pulse, Temperature, SpO₂ and Sugar monitoring.
+</p>
+</div>
+</div>
+
+</section>
+
+
+
+<section class="section">
+
+<h2 class="title">
+More Healthcare Services
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+<i class="fa-solid fa-bed-pulse"></i>
+<h3>Patient Attendant</h3>
+<p>
+24×7 patient support, elderly care and daily activity assistance.
+</p>
+</div>
+
+
+<div class="card">
+<i class="fa-solid fa-stethoscope"></i>
+<h3>Doctor Visit Support</h3>
+<p>
+Doctor consultation assistance and medical coordination.
+</p>
+</div>
+
+
+<div class="card">
+<i class="fa-solid fa-droplet"></i>
+<h3>Catheter Care</h3>
+<p>
+Catheter care, tube management and hygiene support.
+</p>
+</div>
+
+
+<div class="card">
+<i class="fa-solid fa-wheelchair"></i>
+<h3>Post Surgery Care</h3>
+<p>
+Recovery care after surgery, fracture and illness.
+</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<section class="section">
+
 <div class="card">
 
-<h2>Patient Nurse Booking</h2>
+<i class="fa-solid fa-calendar-check"></i>
 
-<form>
+<h3>Book Home Nurse</h3>
 
-<label>Patient Name</label>
-<input type="text" placeholder="Enter patient name">
+<p>
+Need a nurse at home? Contact us for trusted nursing services.
+</p>
 
-<label>Mobile Number</label>
-<input type="tel" placeholder="Enter mobile number">
-
-<label>Address</label>
-<textarea placeholder="Enter full address"></textarea>
-
-<label>Patient Problem</label>
-<textarea placeholder="Describe problem"></textarea>
-
-<label>Select Date</label>
-<input type="date">
-
-<label>Select Time</label>
-<input type="time">
-
-<button>Book Nurse</button>
-
-</form>
-
-</div>
-
-
-<!-- Nurse Registration -->
-<div class="card">
-
-<h2>Nurse Registration</h2>
-
-<form>
-
-<label>Nurse Name</label>
-<input type="text" placeholder="Enter nurse name">
-
-<label>Mobile Number</label>
-<input type="tel" placeholder="Enter mobile number">
-
-<label>Qualification</label>
-<select>
-<option>ANM</option>
-<option>GNM</option>
-<option>B.Sc Nursing</option>
-<option>M.Sc Nursing</option>
-</select>
-
-<label>Experience</label>
-<input type="text" placeholder="Experience years">
-
-<label>Location</label>
-<input type="text" placeholder="City/Area">
-
-<button>Register Nurse</button>
-
-</form>
-
-</div>
-
-
-<a class="btn" href="tel:+918949100258">
-📞 Call Nurse Support
+<a class="btn" href="https://wa.me/918949100258">
+<i class="fab fa-whatsapp"></i>
+Book Now
 </a>
 
 </div>
 
+</section>
 
-<a class="whatsapp" href="https://wa.me/918949100258">
-💬
+
+
+
+
+<section class="founder">
+
+<style>
+
+.founder{
+background:linear-gradient(135deg,#0077b6,#00a896);
+color:white;
+padding:40px 20px;
+margin:20px;
+border-radius:25px;
+text-align:center;
+}
+
+.founder i{
+font-size:60px;
+margin-bottom:15px;
+}
+
+</style>
+
+
+<i class="fa-solid fa-user-doctor"></i>
+
+<h2>Founder</h2>
+
+<h3>Shivam Soni</h3>
+
+<p>S/O Mukesh Chand Shwarnkar</p>
+
+<p>Bharatpur, Rajasthan</p>
+
+<p>
+Professional Home Nursing Services
+</p>
+
+</section>
+
+
+
+
+
+<section class="section">
+
+<h2 class="title">
+Contact Us
+</h2>
+
+
+<div class="card">
+
+<p>
+<i class="fa-solid fa-phone"></i>
+<strong> 8949100258</strong>
+</p>
+
+<br>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+Bharatpur, Rajasthan
+</p>
+
+
+<a class="btn" href="tel:8949100258">
+Call For Nurse
 </a>
+
+
+</div>
+
+</section>
+
+
+
 
 
 <footer>
-<p>© 2026 Nurse's On Call | All Rights Reserved</p>
+
+<style>
+
+footer{
+background:#023047;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+</style>
+
+
+<p>
+© 2026 Nurse's On Call
+</p>
+
+<p>
+Trusted Care At Your Doorstep ❤️
+</p>
+
+
 </footer>
 
 
+
 </body>
+<!-- PART 3 START -->
+
+<section class="section">
+
+<h2 class="title">
+Why Choose Us?
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<i class="fa-solid fa-user-shield"></i>
+<h3>Trusted Nurses</h3>
+<p>
+Professional and caring healthcare staff.
+</p>
+</div>
+
+
+<div class="card">
+<i class="fa-solid fa-clock"></i>
+<h3>24×7 Support</h3>
+<p>
+Healthcare assistance whenever you need.
+</p>
+</div>
+
+
+<div class="card">
+<i class="fa-solid fa-house-medical"></i>
+<h3>Home Care</h3>
+<p>
+Quality nursing service at your doorstep.
+</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section class="section">
+
+<h2 class="title">
+Quick Nurse Booking
+</h2>
+
+
+<div class="card">
+
+<form>
+
+<input type="text" placeholder="Patient Name"
+style="width:100%;padding:12px;margin:8px;border-radius:10px;border:1px solid #ddd;">
+
+
+<input type="tel" placeholder="Mobile Number"
+style="width:100%;padding:12px;margin:8px;border-radius:10px;border:1px solid #ddd;">
+
+
+<textarea placeholder="Required Service"
+style="width:100%;padding:12px;margin:8px;border-radius:10px;border:1px solid #ddd;"></textarea>
+
+
+<a class="btn" href="https://wa.me/918949100258">
+Send Booking Request
+</a>
+
+
+</form>
+
+</div>
+
+</section>
+
+
+
+
+<style>
+
+.card{
+transition:.4s;
+}
+
+.card:hover{
+box-shadow:0 15px 35px #0003;
+}
+
+
+header h1{
+animation:pulse 2s infinite;
+}
+
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.05);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+
+</style>
+
+<!-- PART 3 END -->
 </html>
