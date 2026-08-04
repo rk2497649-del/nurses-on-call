@@ -1897,3 +1897,46 @@ window.open(whatsappURL,'_blank');
 });
 
 </script>
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+let formBox = document.querySelector(".healthFormBox form");
+
+if(formBox && !document.getElementById("serviceCategory")){
+
+let service = document.createElement("select");
+
+service.id="serviceCategory";
+
+service.required=true;
+
+service.innerHTML=`
+
+<option value="">Select Service Category</option>
+<option>Staff Nurse</option>
+<option>Home Care Nurse</option>
+<option>Elderly Caregiver</option>
+<option>Injection / Procedure Nurse</option>
+<option>Physiotherapist</option>
+<option>Lab Technician</option>
+<option>Pharmacist</option>
+<option>Doctor</option>
+<option>Emergency Care Staff</option>
+<option>Other</option>
+
+`;
+
+formBox.insertBefore(service, formBox.children[3]);
+
+service.style.width="100%";
+service.style.padding="13px";
+service.style.margin="8px 0";
+service.style.borderRadius="10px";
+service.style.border="1px solid #ddd";
+
+}
+
+});
+
+</script>
