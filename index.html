@@ -1940,3 +1940,48 @@ service.style.border="1px solid #ddd";
 });
 
 </script>
+<script>
+
+document.addEventListener("DOMContentLoaded",function(){
+
+let box=document.querySelector(".healthFormBox");
+
+if(box && !document.getElementById("serviceBox")){
+
+let div=document.createElement("div");
+
+div.id="serviceBox";
+
+div.innerHTML=`
+
+<select id="serviceCategory" style="
+width:100%;
+padding:13px;
+margin:8px 0;
+border-radius:10px;
+border:1px solid #ddd;
+font-size:15px;
+">
+
+<option value="">Select Service Category</option>
+<option>Staff Nurse</option>
+<option>Home Care Nurse</option>
+<option>Elderly Caregiver</option>
+<option>Injection / Procedure Nurse</option>
+<option>Physiotherapist</option>
+<option>Lab Technician</option>
+<option>Pharmacist</option>
+<option>Doctor</option>
+<option>Emergency Care Staff</option>
+
+</select>
+
+`;
+
+box.querySelector("p").after(div);
+
+}
+
+});
+
+</script>
