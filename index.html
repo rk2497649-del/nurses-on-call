@@ -1559,3 +1559,255 @@ popup.style.display = "none";
 });
 
 </script>
+<!-- JAIPUR NURSES ON CALL - HEALTH PERSONNEL FORM -->
+
+<button id="healthJoinBtn">
+👨‍⚕️ Join Our Team
+</button>
+
+<div id="healthPopup">
+
+<div class="healthFormBox">
+
+<span id="healthClose">×</span>
+
+<h2>Join Jaipur Nurses On Call</h2>
+
+<p>Healthcare Professional Registration</p>
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="tel" placeholder="Mobile Number" required>
+
+<input type="email" placeholder="Email Address">
+
+<select required>
+<option>Select Qualification</option>
+<option>GNM</option>
+<option>B.Sc Nursing</option>
+<option>M.Sc Nursing</option>
+<option>ANM</option>
+<option>Doctor</option>
+<option>Physiotherapist</option>
+<option>Lab Technician</option>
+<option>Pharmacist</option>
+<option>Caregiver</option>
+</select>
+
+<input type="text" placeholder="Registration Number">
+
+<input type="number" placeholder="Experience (Years)">
+
+<input type="text" placeholder="City">
+
+<select>
+<option>Preferred Area</option>
+<option>Jaipur</option>
+<option>Bharatpur</option>
+<option>Other</option>
+</select>
+
+<label>Upload Photo</label>
+<input type="file" accept="image/*">
+
+<label>Upload Resume</label>
+<input type="file" accept=".pdf,.doc,.docx">
+
+<label>Upload Registration Certificate</label>
+<input type="file" accept=".pdf,.jpg,.png">
+
+<textarea placeholder="Additional Information"></textarea>
+
+<label>
+<input type="checkbox" required>
+I confirm all information is correct
+</label>
+
+<button type="submit" id="submitHealth">
+Submit Application
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+
+<style>
+
+#healthJoinBtn{
+position:fixed;
+right:20px;
+bottom:20px;
+z-index:99999;
+
+background:linear-gradient(135deg,#0f4c81,#00bcd4);
+color:white;
+
+border:none;
+padding:15px 22px;
+border-radius:50px;
+
+font-size:16px;
+font-weight:bold;
+
+cursor:pointer;
+
+box-shadow:0 8px 25px rgba(0,0,0,.3);
+}
+
+
+#healthPopup{
+
+display:none;
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.65);
+
+z-index:999999;
+
+align-items:center;
+justify-content:center;
+
+padding:15px;
+
+}
+
+
+.healthFormBox{
+
+background:white;
+
+width:100%;
+max-width:450px;
+
+max-height:90vh;
+
+overflow:auto;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.4);
+
+}
+
+
+.healthFormBox h2{
+
+text-align:center;
+
+color:#0f4c81;
+
+}
+
+
+.healthFormBox p{
+
+text-align:center;
+
+color:#666;
+
+}
+
+
+.healthFormBox input,
+.healthFormBox select,
+.healthFormBox textarea{
+
+width:100%;
+
+padding:13px;
+
+margin:8px 0;
+
+border-radius:10px;
+
+border:1px solid #ddd;
+
+box-sizing:border-box;
+
+}
+
+
+.healthFormBox textarea{
+
+height:80px;
+
+}
+
+
+#healthClose{
+
+float:right;
+
+font-size:32px;
+
+cursor:pointer;
+
+}
+
+
+#submitHealth{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+border-radius:30px;
+
+background:#0f4c81;
+
+color:white;
+
+font-size:18px;
+
+font-weight:bold;
+
+}
+
+
+</style>
+
+
+<script>
+
+document.getElementById("healthJoinBtn").onclick=function(){
+
+document.getElementById("healthPopup").style.display="flex";
+
+}
+
+
+document.getElementById("healthClose").onclick=function(){
+
+document.getElementById("healthPopup").style.display="none";
+
+}
+
+
+window.onclick=function(e){
+
+if(e.target==document.getElementById("healthPopup")){
+
+document.getElementById("healthPopup").style.display="none";
+
+}
+
+}
+
+
+</script>
