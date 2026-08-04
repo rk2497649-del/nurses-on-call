@@ -18,59 +18,48 @@ font-family:'Segoe UI',sans-serif;
 }
 
 body{
-background:#f8fbff;
-color:#1c2b39;
+background:#f5f9ff;
+color:#14213d;
 }
 
-header{
-background:linear-gradient(135deg,#003b73,#0077b6);
+nav{
+background:#061a40;
+padding:18px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 color:white;
-padding:20px;
-text-align:center;
 }
 
 .logo{
-font-size:32px;
+font-size:25px;
 font-weight:800;
-letter-spacing:1px;
 }
 
-header p{
-margin-top:8px;
-font-size:16px;
+.logo i{
+color:#d4af37;
 }
 
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 25px;
-border-radius:30px;
-background:#d4af37;
+nav a{
 color:white;
 text-decoration:none;
-font-weight:bold;
+margin-left:15px;
 }
 
-section{
-padding:45px 20px;
-}
-
-.title{
-text-align:center;
-font-size:30px;
-color:#003b73;
-margin-bottom:25px;
-}
 
 .hero{
+min-height:85vh;
+background:linear-gradient(135deg,#061a40,#0077b6);
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
-padding:60px 20px;
-background:white;
+padding:30px;
 }
 
 .hero h1{
-font-size:38px;
-color:#003b73;
+font-size:45px;
 }
 
 .hero span{
@@ -78,61 +67,32 @@ color:#d4af37;
 }
 
 .hero p{
-margin-top:15px;
 font-size:18px;
+margin:20px 0;
 }
 
-.about{
-max-width:900px;
-margin:auto;
-text-align:center;
-line-height:1.8;
-font-size:17px;
-}
-
-
-/* Founder */
-
-.founder-card{
-max-width:450px;
-margin:auto;
-background:white;
-padding:30px;
-border-radius:25px;
-box-shadow:0 10px 30px rgba(0,0,0,.12);
-text-align:center;
-border-top:5px solid #d4af37;
-}
-
-.founder-card i{
-font-size:55px;
-color:#003b73;
-margin-bottom:15px;
-}
-
-.founder-card h3{
-font-size:28px;
-color:#003b73;
-}
-
-.founder-card p{
-margin:8px;
-font-size:16px;
-}
-
-.contact-btn{
-background:#25D366;
+.btn{
+background:#d4af37;
 color:white;
-padding:12px 25px;
-border-radius:25px;
+padding:14px 30px;
+border-radius:30px;
 text-decoration:none;
-display:inline-block;
-margin-top:15px;
 font-weight:bold;
+display:inline-block;
 }
 
 
-/* Services */
+section{
+padding:50px 20px;
+}
+
+.title{
+text-align:center;
+font-size:32px;
+color:#061a40;
+margin-bottom:30px;
+}
+
 
 .services{
 display:grid;
@@ -140,18 +100,15 @@ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
 }
 
+
 .card{
 background:white;
 padding:25px;
 border-radius:20px;
 text-align:center;
-box-shadow:0 8px 25px rgba(0,0,0,.08);
-transition:.3s;
+box-shadow:0 8px 25px #0001;
 }
 
-.card:hover{
-transform:translateY(-8px);
-}
 
 .card i{
 font-size:35px;
@@ -160,7 +117,23 @@ margin-bottom:15px;
 }
 
 .card h3{
-color:#003b73;
+color:#061a40;
+}
+
+
+.highlight{
+background:#061a40;
+color:white;
+text-align:center;
+border-radius:25px;
+padding:35px;
+}
+
+
+.location{
+text-align:center;
+font-size:18px;
+line-height:2;
 }
 
 
@@ -170,49 +143,108 @@ color:#003b73;
 
 <body>
 
-<header>
+
+<nav>
 
 <div class="logo">
 <i class="fa-solid fa-heart-pulse"></i>
 Nurse's On Call
 </div>
 
-<p>Premium Home Nursing Services</p>
+<div>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+</div>
 
-<a class="btn" href="tel:8949100258">
-<i class="fa-solid fa-phone"></i> Call Now
-</a>
-
-</header>
+</nav>
 
 
-<div class="hero">
+<div class="hero" id="home">
+
+<div>
 
 <h1>
-Care You <span>Trust</span><br>
-At Your Doorstep
+Trusted <span>Home Nursing</span><br>
+Care At Your Doorstep
 </h1>
 
 <p>
-Professional Nursing Care • Patient Support • Home Healthcare
+Professional Nursing Services • Patient Care • 24×7 Support
 </p>
+
+<a class="btn" href="tel:8949100258">
+<i class="fa-solid fa-phone"></i>
+Call Now
+</a>
+
+</div>
 
 </div>
 
 
 <section>
 
+<h2 class="title">Our Services</h2>
+
+
+<div class="services">
+
+
+<div class="card">
+<i class="fa-solid fa-user-nurse"></i>
+<h3>Home Nursing</h3>
+<p>Professional nursing care at home.</p>
+</div>
+
+
+<div class="card">
+<i class="fa-solid fa-bed-pulse"></i>
+<h3>Patient Care</h3>
+<p>Complete patient assistance.</p>
+</div>
+
+
+<div class="card">
+<i class="fa-solid fa-heart-circle-plus"></i>
+<h3>Elder Care</h3>
+<p>Special care for senior citizens.</p>
+</div>
+
+
+<div class="card">
+<i class="fa-solid fa-syringe"></i>
+<h3>Medical Procedures</h3>
+<p>Injection, IV therapy & dressing.</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="highlight">
+
+<h2>Why Choose Nurse's On Call?</h2>
+
+<p>
+Trusted • Professional • Compassionate • Reliable Healthcare Support
+</p>
+
+</div>
+
+</section>
+<section id="about">
+
 <h2 class="title">About Us</h2>
 
-<div class="about">
+<div class="card">
 
-Nurse's On Call is a trusted home healthcare service providing
-professional nursing assistance at your doorstep. We focus on safe,
-compassionate and reliable care for patients, elderly people,
-post-operative patients and those requiring medical support at home.
-
-Our aim is to make quality healthcare easily accessible with
-dedicated nursing services and patient-focused care.
+<p>
+Nurse's On Call provides trusted and professional home nursing services with safety, compassion and quality care. Our mission is to provide reliable healthcare support at your doorstep.
+</p>
 
 </div>
 
@@ -223,195 +255,120 @@ dedicated nursing services and patient-focused care.
 
 <h2 class="title">Founder & Director</h2>
 
-<div class="founder-card">
+
+<div class="card">
 
 <i class="fa-solid fa-user-doctor"></i>
 
-<h3>Shivam Soni</h3>
+<h2 style="color:#061a40;">
+Shivam Soni
+</h2>
 
-<p><b>S/O Mukesh Chand Soni</b></p>
+<p>
+<b>S/O Mukesh Chand Shwarnkar</b>
+</p>
 
 <p>
 <i class="fa-solid fa-location-dot"></i>
 Bharatpur, Rajasthan
 </p>
 
+
 <p>
 <i class="fa-solid fa-building"></i>
-Office: Patrikar Colony, Mansarovar, Jaipur
+Office Location:<br>
+Patrikar Colony, Mansarovar, Jaipur
 </p>
+
 
 <p>
 <i class="fa-solid fa-phone"></i>
 8949100258
 </p>
+
 
 <p>
 <i class="fa-solid fa-globe"></i>
 shivamsoni68720
 </p>
 
-<a class="contact-btn" href="https://wa.me/918949100258">
+
+<a class="btn" href="https://wa.me/918949100258">
 <i class="fa-brands fa-whatsapp"></i>
 WhatsApp
 </a>
 
-</div>
-
-</section>
-<section>
-
-<h2 class="title">Our Premium Services</h2>
-
-<div class="services">
-
-<div class="card">
-<i class="fa-solid fa-user-nurse"></i>
-<h3>Home Nursing Care</h3>
-<p>Professional nurses for quality care at home.</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-hospital-user"></i>
-<h3>Patient Care</h3>
-<p>Complete support and monitoring for patients.</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-heart-circle-plus"></i>
-<h3>Elderly Care</h3>
-<p>Special care and assistance for senior citizens.</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-bed-pulse"></i>
-<h3>ICU Care At Home</h3>
-<p>Critical patient support with proper monitoring.</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-syringe"></i>
-<h3>Injection & IV Therapy</h3>
-<p>Safe medical procedures at your doorstep.</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-bandage"></i>
-<h3>Wound Dressing</h3>
-<p>Professional wound and dressing care.</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-notes-medical"></i>
-<h3>Post Operative Care</h3>
-<p>Recovery support after surgery.</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-stethoscope"></i>
-<h3>Vital Monitoring</h3>
-<p>Regular health monitoring and support.</p>
-</div>
 
 </div>
 
 </section>
 
-
-<section>
-
-<h2 class="title">Why Choose Us</h2>
-
-<div class="services">
-
-<div class="card">
-<i class="fa-solid fa-shield-heart"></i>
-<h3>Trusted Care</h3>
-<p>Safe and compassionate healthcare service.</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-clock"></i>
-<h3>24×7 Support</h3>
-<p>Healthcare assistance whenever you need.</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-user-check"></i>
-<h3>Professional Team</h3>
-<p>Dedicated nursing support for patients.</p>
-</div>
-
-</div>
-
-</section>
 
 
 <section>
 
 <h2 class="title">Contact Us</h2>
 
-<div class="founder-card">
 
-<i class="fa-solid fa-location-dot"></i>
+<div class="location">
 
 <h3>Nurse's On Call</h3>
 
 <p>
-Patrikar Colony, Mansarovar,<br>
+Patrikar Colony, Mansarovar<br>
 Jaipur, Rajasthan
 </p>
 
 <p>
-<i class="fa-solid fa-phone"></i>
-8949100258
+📞 8949100258
 </p>
 
 
-<a class="contact-btn" href="tel:8949100258">
-<i class="fa-solid fa-phone"></i>
+<a class="btn" href="tel:8949100258">
 Call Now
 </a>
 
+
 </div>
+
 
 </section>
 
 
+
 <footer style="
-background:#003b73;
+background:#061a40;
 color:white;
 text-align:center;
-padding:20px;
+padding:25px;
 ">
 
 <p>
-© 2026 Nurse's On Call | Premium Home Nursing Services
+© 2026 Nurse's On Call
 </p>
 
 <p>
-Bharatpur • Jaipur
+Premium Home Nursing Services
 </p>
 
 </footer>
 
 
-<a href="https://wa.me/918949100258" 
+<a href="https://wa.me/918949100258"
 style="
 position:fixed;
 right:20px;
 bottom:20px;
 background:#25D366;
 color:white;
-font-size:28px;
 width:60px;
 height:60px;
 border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
+font-size:30px;
 text-decoration:none;
-box-shadow:0 5px 15px #555;
 ">
 
 <i class="fa-brands fa-whatsapp"></i>
