@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Panel | Jaipur Nurses On Call</title>
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f7fb;
+margin:0;
+padding:20px;
+}
+
+.admin-box{
+max-width:900px;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 20px #ddd;
+}
+
+h1{
+text-align:center;
+color:#0f4c81;
+}
+
+.login input{
+width:100%;
+padding:12px;
+margin:8px 0;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+button{
+background:#0f4c81;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:25px;
+cursor:pointer;
+}
+
+.dashboard{
+display:none;
+}
+
+.card{
+background:#f8faff;
+padding:15px;
+margin:15px 0;
+border-radius:12px;
+border-left:5px solid #0f4c81;
+}
+
+.whatsapp{
+background:#25D366;
+text-decoration:none;
+color:white;
+padding:8px 15px;
+border-radius:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="admin-box">
+
+<h1>🏥 Jaipur Nurses On Call<br>Admin Panel</h1>
+
+
+<div class="login" id="login">
+
+<input id="user" placeholder="Username">
+
+<input id="pass" type="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+</div>
+
+
+<div class="dashboard" id="dashboard">
+
+<h2>📋 Applications</h2>
+
+<div class="card">
+
+<h3>Demo Application</h3>
+
+<p>Name: Shivam</p>
+<p>Service: Staff Nurse</p>
+<p>Qualification: GNM</p>
+<p>Area: Bharatpur</p>
+
+<a class="whatsapp" href="https://wa.me/918949100258">
+WhatsApp
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<script>
+
+function login(){
+
+let u=document.getElementById("user").value;
+
+let p=document.getElementById("pass").value;
+
+
+if(u=="admin" && p=="12345"){
+
+document.getElementById("login").style.display="none";
+
+document.getElementById("dashboard").style.display="block";
+
+}
+
+else{
+
+alert("Wrong Login Details");
+
+}
+
+}
+
+</script>
+
+
+</body>
+</html>
