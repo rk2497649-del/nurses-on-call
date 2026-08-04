@@ -2219,3 +2219,71 @@ window.open(
 };
 
 </script>
+<script>
+
+document.addEventListener("DOMContentLoaded",function(){
+
+let btn=document.getElementById("submitHealth");
+
+if(btn){
+
+btn.onclick=function(e){
+
+e.preventDefault();
+
+
+let name=document.querySelector('input[placeholder="Full Name"]')?.value || "";
+
+let mobile=document.querySelector('input[placeholder="Mobile Number"]')?.value || "";
+
+let city=document.querySelector('input[placeholder="City"]')?.value || "";
+
+let experience=document.querySelector('input[placeholder="Experience (Years)"]')?.value || "";
+
+
+let selects=document.querySelectorAll(".healthFormBox select");
+
+let service="";
+let qualification="";
+
+
+selects.forEach(function(s){
+
+let options=s.innerText;
+
+if(options.includes("Staff Nurse") || options.includes("Home Care Nurse") || options.includes("Injection / Procedure Nurse") || options.includes("Physiotherapist")){
+
+service=s.value;
+
+}else{
+
+qualification=s.value;
+
+}
+
+});
+
+
+let message =
+"New Health Personnel Application\n\n"+
+"Name: "+name+"\n"+
+"Mobile: "+mobile+"\n"+
+"Service: "+service+"\n"+
+"Qualification: "+qualification+"\n"+
+"Experience: "+experience+" Years\n"+
+"City: "+city;
+
+
+window.open(
+"https://wa.me/918949100258?text="+encodeURIComponent(message),
+"_blank"
+);
+
+
+}
+
+}
+
+});
+
+</script>
