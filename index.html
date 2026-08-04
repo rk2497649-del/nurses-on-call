@@ -2145,3 +2145,22 @@ window.open(
 };
 
 </script>
+<script>
+
+document.addEventListener("DOMContentLoaded",function(){
+
+let categories=document.querySelectorAll("#serviceCategory");
+
+if(categories.length>1){
+
+for(let i=1;i<categories.length;i++){
+
+categories[i].remove();
+
+}
+
+}
+
+});
+
+</script>
