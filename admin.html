@@ -143,3 +143,49 @@ alert("Wrong Login Details");
 
 </body>
 </html>
+<script>
+
+document.addEventListener("DOMContentLoaded",function(){
+
+let btn=document.getElementById("submitHealth");
+
+if(btn){
+
+btn.addEventListener("click",function(){
+
+let inputs=document.querySelectorAll(".healthFormBox input");
+
+let selects=document.querySelectorAll(".healthFormBox select");
+
+
+let data={
+
+name: inputs[0]?.value || "",
+
+mobile: inputs[1]?.value || "",
+
+service: selects[0]?.value || "",
+
+qualification: selects[1]?.value || "",
+
+area: selects[2]?.value || "",
+
+date: new Date().toLocaleString()
+
+};
+
+
+let oldData=JSON.parse(localStorage.getItem("nurseApplications")) || [];
+
+oldData.push(data);
+
+localStorage.setItem("nurseApplications",JSON.stringify(oldData));
+
+
+});
+
+}
+
+});
+
+</script>
