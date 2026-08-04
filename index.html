@@ -2034,3 +2034,60 @@ window.open(whatsappURL,'_blank');
 });
 
 </script>
+<script>
+
+document.addEventListener("DOMContentLoaded",function(){
+
+let btn=document.getElementById("submitHealth");
+
+if(btn){
+
+btn.onclick=function(e){
+
+e.preventDefault();
+
+let inputs=document.querySelectorAll(".healthFormBox input");
+
+let name=inputs[0].value;
+let mobile=inputs[1].value;
+
+let selects=document.querySelectorAll(".healthFormBox select");
+
+let service="";
+
+if(document.getElementById("serviceCategory")){
+service=document.getElementById("serviceCategory").value;
+}
+
+let qualification=selects[0] ? selects[0].value : "";
+
+let city="";
+
+inputs.forEach(function(i){
+if(i.placeholder=="City"){
+city=i.value;
+}
+});
+
+
+let msg =
+"New Health Personnel Application\n\n"+
+"Name: "+name+"\n"+
+"Mobile: "+mobile+"\n"+
+"Service: "+service+"\n"+
+"Qualification: "+qualification+"\n"+
+"City: "+city;
+
+
+window.open(
+"https://wa.me/918949100258?text="+encodeURIComponent(msg),
+"_blank"
+);
+
+}
+
+}
+
+});
+
+</script>
