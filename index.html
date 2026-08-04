@@ -1,341 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="cwvAiSgsPOiow8sGX4MM_mws8F8gw2EpQhzH8a0e8vo" />
 <meta charset="UTF-8">
-<meta name="description" content="Nurse's On Call provides professional home nursing services in Jaipur and Bharatpur including patient care, elderly care, ICU care at home, injections, IV therapy, wound dressing and 24×7 healthcare support.">
-<meta name="keywords" content="Home Nursing Jaipur, Home Nursing Bharatpur, Home Nurse Jaipur, Patient Care at Home, Elder Care, ICU Care at Home, Injection at Home, IV Therapy, Wound Dressing, Home Healthcare Rajasthan, Nurse's On Call">
-<link rel="canonical" href="https://rk2497649-del.github.io/nurses-on-call/">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nurse's On Call | Home Nursing Services Jaipur & Bharatpur | 24×7 Patient Care</title>
+<title>Nurse's On Call | Premium Home Nursing Services Bharatpur</title>
+
+<meta name="description" content="Nurse's On Call provides premium home nursing care, ICU care at home, elderly care and medical services in Bharatpur Rajasthan.">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Segoe UI',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f5f9ff;
-color:#14213d;
+    background:#f5fbff;
+    color:#222;
 }
 
-nav{
-background:#061a40;
-padding:18px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-color:white;
+html{
+    scroll-behavior:smooth;
+}
+
+header{
+    width:100%;
+    background:#ffffff;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
 }
 
 .logo{
-font-size:25px;
-font-weight:800;
+    font-size:28px;
+    font-weight:800;
+    color:#0077b6;
 }
 
-.logo i{
-color:#d4af37;
+.logo span{
+    color:#00b894;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin-left:15px;
+    text-decoration:none;
+    margin-left:20px;
+    color:#333;
+    font-weight:600;
 }
 
-
 .hero{
-min-height:85vh;
-background:linear-gradient(135deg,#061a40,#0077b6);
-color:white;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:30px;
+
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    padding:50px 8%;
+    background:linear-gradient(135deg,#0077b6,#00b894);
+    color:white;
+}
+
+.hero-text{
+    max-width:650px;
 }
 
 .hero h1{
-font-size:45px;
+    font-size:55px;
+    line-height:1.2;
 }
 
-.hero span{
-color:#d4af37;
+.hero h1 span{
+    color:#ffe66d;
 }
 
 .hero p{
-font-size:18px;
-margin:20px 0;
+    margin:20px 0;
+    font-size:20px;
 }
 
 .btn{
-background:#d4af37;
-color:white;
-padding:14px 30px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-display:inline-block;
+    display:inline-block;
+    padding:14px 30px;
+    border-radius:50px;
+    background:white;
+    color:#0077b6;
+    text-decoration:none;
+    font-weight:bold;
+    margin-right:10px;
 }
 
-
-section{
-padding:50px 20px;
+.btn:hover{
+    transform:scale(1.05);
 }
 
-.title{
-text-align:center;
-font-size:32px;
-color:#061a40;
-margin-bottom:30px;
+.hero-icon{
+    font-size:180px;
+    margin-left:auto;
+    opacity:.9;
 }
 
+@media(max-width:768px){
 
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+header{
+    padding:15px 5%;
 }
 
-
-.card{
-background:white;
-padding:25px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 8px 25px #0001;
+nav{
+    display:none;
 }
 
-
-.card i{
-font-size:35px;
-color:#0077b6;
-margin-bottom:15px;
+.hero{
+    text-align:center;
 }
 
-.card h3{
-color:#061a40;
+.hero h1{
+    font-size:38px;
 }
 
-
-.highlight{
-background:#061a40;
-color:white;
-text-align:center;
-border-radius:25px;
-padding:35px;
+.hero-icon{
+    display:none;
 }
 
-
-.location{
-text-align:center;
-font-size:18px;
-line-height:2;
 }
-
-
 </style>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"MedicalBusiness",
-  "name":"Nurse's On Call",
-  "description":"Professional Home Nursing Services in Jaipur and Bharatpur",
-  "url":"https://rk2497649-del.github.io/nurses-on-call/",
-  "telephone":"+91-8949100258",
-  "founder":{
-    "@type":"Person",
-    "name":"Shivam Soni"
-  },
-  "address":{
-    "@type":"PostalAddress",
-    "streetAddress":"Patrikar Colony, Mansarovar",
-    "addressLocality":"Jaipur",
-    "addressRegion":"Rajasthan",
-    "addressCountry":"IN"
-  },
-  "areaServed":[
-    "Jaipur",
-    "Bharatpur"
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"MedicalBusiness",
-  "@id":"https://rk2497649-del.github.io/nurses-on-call/#business",
-  "name":"Nurse's On Call",
-  "url":"https://rk2497649-del.github.io/nurses-on-call/",
-  "description":"24×7 Professional Home Nursing Services in Jaipur and Bharatpur. Home Nursing, Patient Care, Elder Care, ICU Care at Home, Wound Dressing, Injection, IV Therapy and Healthcare Support.",
-  "telephone":"+91-8949100258",
-  "email":"shivamsoni68720@gmail.com",
-  "priceRange":"₹₹",
-  "founder":{
-    "@type":"Person",
-    "name":"Shivam Soni"
-  },
-  "address":{
-    "@type":"PostalAddress",
-    "streetAddress":"Patrikar Colony, Mansarovar",
-    "addressLocality":"Jaipur",
-    "addressRegion":"Rajasthan",
-    "postalCode":"302020",
-    "addressCountry":"IN"
-  },
-  "areaServed":[
-    "Jaipur",
-    "Bharatpur"
-  ],
-  "openingHours":"Mo-Su 00:00-23:59"
-}
-</script>
+
 </head>
 
 <body>
 
-
-<nav>
+<header>
 
 <div class="logo">
-<i class="fa-solid fa-heart-pulse"></i>
-Nurse's On Call
+Nurse's <span>On Call</span>
 </div>
 
-<div>
+<nav>
 <a href="#home">Home</a>
 <a href="#about">About</a>
-</div>
-
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
 </nav>
 
+</header>
 
-<div class="hero" id="home">
 
-<div>
+<section class="hero" id="home">
+
+<div class="hero-text">
 
 <h1>
-Trusted <span>Home Nursing</span><br>
-Care At Your Doorstep
+Professional <span>Home Nursing Care</span>
+At Your Doorstep
 </h1>
 
 <p>
-Professional Nursing Services • Patient Care • 24×7 Support
+24×7 Trusted Nursing Services, ICU Care, Elderly Care and Medical Support in Bharatpur Rajasthan.
 </p>
 
 <a class="btn" href="tel:8949100258">
-<i class="fa-solid fa-phone"></i>
-Call Now
+<i class="fa-solid fa-phone"></i> Call Now
+</a>
+
+<a class="btn" href="https://wa.me/918949100258">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
 </a>
 
 </div>
 
-</div>
 
+<div class="hero-icon">
 
-<section>
-
-<h2 class="title">Our Services</h2>
-
-
-<div class="services">
-
-
-<div class="card">
 <i class="fa-solid fa-user-nurse"></i>
-<h3>Home Nursing</h3>
-<p>Professional nursing care at home.</p>
-</div>
-
-
-<div class="card">
-<i class="fa-solid fa-bed-pulse"></i>
-<h3>Patient Care</h3>
-<p>Complete patient assistance.</p>
-</div>
-
-
-<div class="card">
-<i class="fa-solid fa-heart-circle-plus"></i>
-<h3>Elder Care</h3>
-<p>Special care for senior citizens.</p>
-</div>
-
-
-<div class="card">
-<i class="fa-solid fa-syringe"></i>
-<h3>Medical Procedures</h3>
-<p>Injection, IV therapy & dressing.</p>
-</div>
-
 
 </div>
+
 
 </section>
+<!-- ABOUT SECTION -->
 
+<section id="about" style="padding:70px 8%;">
 
-<section>
-
-<div class="highlight">
-
-<h2>Why Choose Nurse's On Call?</h2>
-
-<p>
-Trusted • Professional • Compassionate • Reliable Healthcare Support
-</p>
-
-</div>
-
-</section>
-<section id="about">
-
-<h2 class="title">About Us</h2>
-
-<div class="card">
-
-<p>
-Nurse's On Call provides trusted and professional home nursing services with safety, compassion and quality care. Our mission is to provide reliable healthcare support at your doorstep.
-</p>
-
-</div>
-
-</section>
-
-
-<section>
-
-<h2 class="title">Founder & Director</h2>
-
-
-<div class="card">
-
-<i class="fa-solid fa-user-doctor"></i>
-
-<h2 style="color:#061a40;">
-Shivam Soni
+<div style="text-align:center;">
+<h2 style="color:#0077b6;font-size:35px;">
+About Nurse's On Call
 </h2>
 
+<p style="margin-top:15px;font-size:18px;">
+Nurse's On Call provides professional and reliable home healthcare services.
+Our mission is to bring hospital quality nursing care to every patient's home.
+</p>
+</div>
+
+
+<div style="margin-top:40px;display:flex;gap:30px;flex-wrap:wrap;align-items:center;">
+
+
+<div style="flex:1;min-width:300px;background:white;padding:30px;border-radius:20px;box-shadow:0 10px 30px #ddd;">
+
+<h3 style="color:#00b894;">
+<i class="fa-solid fa-user-doctor"></i>
+ Founder
+</h3>
+
+<br>
+
 <p>
-<b>S/O Mukesh Chand Shwarnkar</b>
+<b>Founder:</b> Shivam Soni
 </p>
 
 <p>
-<i class="fa-solid fa-location-dot"></i>
+S/O Mukesh Chand Shwarnkar
+</p>
+
+<p>
 Bharatpur, Rajasthan
 </p>
 
+<p>
+<i class="fa-solid fa-phone"></i>
+8949100258
+</p>
+
+</div>
+
+
+
+<div style="flex:1;min-width:300px;background:#0077b6;color:white;padding:30px;border-radius:20px;">
+
+<h3>
+<i class="fa-solid fa-heart-pulse"></i>
+ Our Mission
+</h3>
+
+<br>
 
 <p>
-<i class="fa-solid fa-building"></i>
-Office Location:<br>
-Patrikar Colony, Mansarovar, Jaipur
+To provide safe, affordable and compassionate healthcare services at patient's doorstep with trained nursing professionals.
+</p>
+
+<br>
+
+<h3>
+<i class="fa-solid fa-eye"></i>
+ Our Vision
+</h3>
+
+<p>
+To become a trusted home healthcare brand in Rajasthan.
+</p>
+
+
+</div>
+
+
+</div>
+
+</section>
+<!-- SERVICES SECTION -->
+
+<section id="services" style="padding:70px 8%;background:#f5fbff;">
+
+<div style="text-align:center;margin-bottom:40px;">
+
+<h2 style="color:#0077b6;font-size:35px;">
+Our Premium Nursing Services
+</h2>
+
+<p>
+Professional healthcare services available at your home.
+</p>
+
+</div>
+
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;">
+
+
+<div class="service-card">
+<i class="fa-solid fa-house-medical"></i>
+<h3>Home Nursing Care</h3>
+<p>Complete nursing support at patient's home.</p>
+</div>
+
+
+<div class="service-card">
+<i class="fa-solid fa-heart-pulse"></i>
+<h3>ICU Care At Home</h3>
+<p>Critical patient monitoring and nursing support.</p>
+</div>
+
+
+<div class="service-card">
+<i class="fa-solid fa-user-nurse"></i>
+<h3>Elderly Care</h3>
+<p>Special care for senior citizens and dependent patients.</p>
+</div>
+
+
+<div class="service-card">
+<i class="fa-solid fa-bed"></i>
+<h3>Bedridden Patient Care</h3>
+<p>Daily assistance and medical support for bedridden patients.</p>
+</div>
+
+
+<div class="service-card">
+<i class="fa-solid fa-syringe"></i>
+<h3>Injection Services</h3>
+<p>IM, IV and prescribed injection administration at home.</p>
+</div>
+
+
+<div class="service-card">
+<i class="fa-solid fa-droplet"></i>
+<h3>IV Drip Therapy</h3>
+<p>Safe IV fluid and medication administration.</p>
+</div>
+
+
+<div class="service-card">
+<i class="fa-solid fa-kit-medical"></i>
+<h3>Wound Dressing</h3>
+<p>Advanced wound care and regular dressing services.</p>
+</div>
+
+
+<div class="service-card">
+<i class="fa-solid fa-bandage"></i>
+<h3>Suture Removal</h3>
+<p>Professional post-operative stitch removal.</p>
+</div>
+
+
+<div class="service-card">
+<i class="fa-solid fa-vial"></i>
+<h3>Blood Sample Collection</h3>
+<p>Home sample collection facility.</p>
+</div>
+
+
+<div class="service-card">
+<i class="fa-solid fa-lungs"></i>
+<h3>Tracheostomy Care</h3>
+<p>Specialized airway care support.</p>
+</div>
+
+
+<div class="service-card">
+<i class="fa-solid fa-notes-medical"></i>
+<h3>Catheter Care</h3>
+<p>Urinary catheter management and care.</p>
+</div>
+
+
+<div class="service-card">
+<i class="fa-solid fa-person-walking"></i>
+<h3>Physiotherapy Support</h3>
+<p>Recovery and rehabilitation assistance.</p>
+</div>
+
+
+<div class="service-card">
+<i class="fa-solid fa-stethoscope"></i>
+<h3>Doctor Visit At Home</h3>
+<p>Doctor consultation support at doorstep.</p>
+</div>
+
+
+<div class="service-card">
+<i class="fa-solid fa-wave-square"></i>
+<h3>ECG At Home</h3>
+<p>Home ECG testing facility.</p>
+</div>
+
+
+<div class="service-card">
+<i class="fa-solid fa-pills"></i>
+<h3>Medicine Support</h3>
+<p>Medication reminders and healthcare assistance.</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<style>
+
+.service-card{
+
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+transition:.3s;
+
+}
+
+
+.service-card i{
+
+font-size:45px;
+color:#00b894;
+margin-bottom:15px;
+
+}
+
+
+.service-card h3{
+
+color:#0077b6;
+margin-bottom:10px;
+
+}
+
+
+.service-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+</style>
+<!-- WHY CHOOSE US SECTION -->
+
+<section style="padding:70px 8%;">
+
+<div style="text-align:center;">
+
+<h2 style="color:#0077b6;font-size:35px;">
+Why Choose Nurse's On Call?
+</h2>
+
+<p>
+Trusted care with professional nursing support.
+</p>
+
+</div>
+
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;margin-top:40px;">
+
+
+<div class="choose-card">
+<i class="fa-solid fa-user-shield"></i>
+<h3>Trained Nurses</h3>
+<p>Experienced and professional nursing staff.</p>
+</div>
+
+
+<div class="choose-card">
+<i class="fa-solid fa-clock"></i>
+<h3>24×7 Support</h3>
+<p>Healthcare assistance available anytime.</p>
+</div>
+
+
+<div class="choose-card">
+<i class="fa-solid fa-house-medical-circle-check"></i>
+<h3>Home Care</h3>
+<p>Hospital quality care at your doorstep.</p>
+</div>
+
+
+<div class="choose-card">
+<i class="fa-solid fa-hand-holding-heart"></i>
+<h3>Patient First</h3>
+<p>Compassionate and safe patient care.</p>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- TESTIMONIAL SECTION -->
+
+<section style="padding:70px 8%;background:#0077b6;color:white;">
+
+
+<div style="text-align:center;">
+
+<h2 style="font-size:35px;">
+Patient Reviews
+</h2>
+
+</div>
+
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin-top:40px;">
+
+
+<div class="review
+<!-- BOOKING SECTION -->
+
+<section style="padding:70px 8%;background:#f5fbff;" id="booking">
+
+<div style="text-align:center;">
+
+<h2 style="color:#0077b6;font-size:35px;">
+Book Home Nursing Service
+</h2>
+
+<p>
+Fill the details and our team will contact you.
+</p>
+
+</div>
+
+
+<div class="booking-box">
+
+<form>
+
+<input type="text" placeholder="Patient Name" required>
+
+<input type="tel" placeholder="Mobile Number" required>
+
+<input type="text" placeholder="Address" required>
+
+
+<select>
+
+<option>Select Service</option>
+<option>Home Nursing Care</option>
+<option>ICU Care At Home</option>
+<option>Elderly Care</option>
+<option>Injection Service</option>
+<option>IV Drip</option>
+<option>Wound Dressing</option>
+<option>Physiotherapy</option>
+
+</select>
+
+
+<textarea placeholder="Patient Details"></textarea>
+
+
+<button type="submit">
+<i class="fa-solid fa-calendar-check"></i>
+Book Now
+</button>
+
+
+</form>
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT SECTION -->
+
+
+<section id="contact" style="padding:70px 8%;">
+
+<div style="text-align:center;">
+
+<h2 style="color:#0077b6;font-size:35px;">
+Contact Nurse's On Call
+</h2>
+
+</div>
+
+
+<div class="contact-box">
+
+
+<h3>
+<i class="fa-solid fa-user"></i>
+Shivam Soni
+</h3>
+
+<p>
+Founder, Nurse's On Call
+</p>
+
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+jaipur, Rajasthan
 </p>
 
 
@@ -346,45 +605,8 @@ Patrikar Colony, Mansarovar, Jaipur
 
 
 <p>
-<i class="fa-solid fa-globe"></i>
-shivamsoni68720
+Available for Home Nursing Services
 </p>
-
-
-<a class="btn" href="https://wa.me/918949100258">
-<i class="fa-brands fa-whatsapp"></i>
-WhatsApp
-</a>
-
-
-</div>
-
-</section>
-
-
-
-<section>
-
-<h2 class="title">Contact Us</h2>
-
-
-<div class="location">
-
-<h3>Nurse's On Call</h3>
-
-<p>
-Patrikar Colony, Mansarovar<br>
-Jaipur, Rajasthan
-</p>
-
-<p>
-📞 8949100258
-</p>
-
-
-<a class="btn" href="tel:8949100258">
-Call Now
-</a>
 
 
 </div>
@@ -394,45 +616,481 @@ Call Now
 
 
 
-<footer style="
-background:#061a40;
-color:white;
-text-align:center;
-padding:25px;
-">
+<!-- FOOTER -->
+
+
+<footer>
+
+<h2>
+Nurse's On Call
+</h2>
 
 <p>
-© 2026 Nurse's On Call
+Professional Home Healthcare Services | jaipur Rajasthan
 </p>
 
 <p>
-Premium Home Nursing Services
+© 2026 Nurse's On Call. All Rights Reserved.
 </p>
+
 
 </footer>
 
 
-<a href="https://wa.me/918949100258"
-style="
-position:fixed;
-right:20px;
-bottom:20px;
-background:#25D366;
-color:white;
-width:60px;
-height:60px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:30px;
-text-decoration:none;
-">
+
+<!-- FLOATING BUTTONS -->
+
+
+<a href="tel:8949100258" class="call-btn">
+
+<i class="fa-solid fa-phone"></i>
+
+</a>
+
+
+
+<a href="https://wa.me/918949100258" class="whatsapp-btn">
 
 <i class="fa-brands fa-whatsapp"></i>
 
 </a>
 
 
-</body>
-</html>
+
+
+<style>
+
+
+.booking-box{
+
+max-width:600px;
+margin:40px auto;
+background:white;
+padding:35px;
+border-radius:25px;
+box-shadow:0 10px 30px #ddd;
+
+}
+
+
+.booking-box input,
+.booking-box textarea,
+.booking-box select{
+
+width:100%;
+padding:15px;
+margin:10px 0;
+border-radius:10px;
+border:1px solid #ccc;
+
+}
+
+
+.booking-box textarea{
+
+height:120px;
+
+}
+
+
+.booking-box button{
+
+width:100%;
+padding:15px
+<!-- PREMIUM ANIMATION CSS -->
+
+<style>
+
+
+/* Smooth Page Look */
+
+section{
+    animation:fadeUp 1s ease;
+}
+
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+
+/* Premium Button Effect */
+
+
+.btn,
+.booking-box button{
+
+transition:.3s;
+
+}
+
+
+.btn:hover,
+.booking-box button:hover{
+
+box-shadow:0 10px 25px rgba(0,119,182,.4);
+}
+
+
+
+/* Glass Effect Cards */
+
+
+.service-card,
+.choose-card,
+.review-card,
+.booking-box{
+
+backdrop-filter:blur(10px);
+
+}
+
+
+
+/* Heading Style */
+
+
+h2{
+
+letter-spacing:.5px;
+
+}
+
+
+
+/* Mobile Improvements */
+
+
+@media(max-width:768px){
+
+.hero{
+
+min-height:75vh;
+padding:40px 5%;
+
+}
+
+
+.hero p{
+
+font-size:17px;
+
+}
+
+
+.btn{
+
+display:block;
+margin:15px auto;
+width:80%;
+
+}
+
+
+.service-card,
+.choose-card{
+
+padding:25px;
+
+}
+
+
+.logo{
+
+font-size:22px;
+
+}
+
+
+}
+
+
+/* Floating Button Animation */
+
+
+.call-btn,
+.whatsapp-btn{
+
+animation:pulse 2s infinite;
+
+}
+
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+
+50%{
+
+transform:scale(1.1);
+
+}
+
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+
+
+/* Premium Scroll Bar */
+
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+
+::-webkit-scrollbar-thumb{
+
+background:#0077b6;
+border-radius:20px;
+
+}
+
+
+
+/* Card Hover */
+
+
+.service-card:hover,
+.choose-card:hover{
+
+background:linear-gradient(135deg,#ffffff,#e8f9ff);
+
+}
+
+
+
+/* Image Ready Class */
+
+
+.nurse-image{
+
+width:100%;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+
+</style>
+<!-- JAVASCRIPT -->
+
+<script>
+
+
+// Booking Form WhatsApp Message
+
+const form = document.querySelector(".booking-box form");
+
+
+form.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+
+let name = document.querySelector(
+'.booking-box input[placeholder="Patient Name"]'
+).value;
+
+
+let phone = document.querySelector(
+'.booking-box input[placeholder="Mobile Number"]'
+).value;
+
+
+let address = document.querySelector(
+'.booking-box input[placeholder="Address"]'
+).value;
+
+
+let service = document.querySelector(
+'.booking-box select'
+).value;
+
+
+let details = document.querySelector(
+'.booking-box textarea'
+).value;
+
+
+
+let message =
+
+"New Home Nursing Booking%0A%0A"+
+"Patient Name: "+name+
+"%0AMobile: "+phone+
+"%0AAddress: "+address+
+"%0AService: "+service+
+"%0ADetails: "+details;
+
+
+
+window.open(
+"https://wa.me/918949100258?text="+message,
+"_blank"
+);
+
+
+});
+
+
+
+
+// Navbar Scroll Effect
+
+
+window.addEventListener("scroll",function(){
+
+let header=document.querySelector("header");
+
+
+if(window.scrollY>50){
+
+header.style.boxShadow=
+"0 5px 25px rgba(0,0,0,.2)";
+
+}
+
+else{
+
+header.style.boxShadow=
+"0 5px 20px rgba(0,0,0,.1)";
+
+}
+
+
+});
+
+
+
+
+// Welcome Message
+
+
+window.onload=function(){
+
+console.log(
+"Welcome to Nurse's On Call - Bharatpur"
+);
+
+};
+
+
+
+
+</script>
+<!-- FINAL SEO & WEBSITE FINISHING -->
+
+<script>
+
+// Current Year Auto Update
+
+document.addEventListener("DOMContentLoaded",function(){
+
+let year = new Date().getFullYear();
+
+let footerText = document.querySelector("footer p:last-child");
+
+if(footerText){
+
+footerText.innerHTML =
+"© "+year+" Nurse's On Call. All Rights Reserved.";
+
+}
+
+});
+
+</script>
+
+
+
+<!-- SEO STRUCTURED DATA -->
+
+<script type="application/ld+json">
+
+{
+"@context":"https://schema.org",
+"@type":"MedicalBusiness",
+"name":"Nurse's On Call",
+"founder":"Shivam Soni",
+"address":{
+"addressLocality":"Bharatpur",
+"addressRegion":"Rajasthan",
+"addressCountry":"India"
+},
+"telephone":"8949100258",
+"serviceType":[
+"Home Nursing Care",
+"ICU Care At Home",
+"Elderly Care",
+"Patient Care Services"
+]
+}
+
+</script>
+
+
+
+<!-- BACK TO TOP BUTTON -->
+
+<a href="#home" class="top-btn">
+<i class="fa-solid fa-arrow-up"></i>
+</a>
+
+
+
+<style>
+
+.top-btn{
+
+position:fixed;
+bottom:100px;
+right:25px;
+width:45px;
+height:45px;
+background:#0077b6;
+color:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+font-size:20px;
+z-index:999;
+
+}
+
+
+.top-btn:hover{
+
+transform:scale(1.1);
+
+}
+
+
+
+</style>
