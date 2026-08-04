@@ -2354,17 +2354,51 @@ let msg=
 "City: "+cityInput;
 
 
+showSuccess();
+
+setTimeout(function(){
+
 window.open(
 "https://wa.me/918949100258?text="+encodeURIComponent(msg),
 "_blank"
 );
+
+},1200);
 
 }
 
 }
 
 });
+function showSuccess(){
 
+let success=document.createElement("div");
+
+success.innerHTML="✅ <b>Application Successfully Completed!</b><br>Our HR Team will contact you shortly.";
+
+success.style.cssText=`
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+background:#16a34a;
+color:#fff;
+padding:18px 24px;
+border-radius:12px;
+font-size:16px;
+font-weight:600;
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+z-index:999999;
+text-align:center;
+`;
+
+document.body.appendChild(success);
+
+setTimeout(function(){
+success.remove();
+},3000);
+
+}
 </script>
 <script>
 
