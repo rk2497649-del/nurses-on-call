@@ -2344,3 +2344,69 @@ window.open(
 });
 
 </script>
+<script>
+
+document.addEventListener("DOMContentLoaded",function(){
+
+let btn=document.getElementById("submitHealth");
+
+if(btn){
+
+btn.onclick=function(e){
+
+e.preventDefault();
+
+let appID = "JNC-" + Date.now();
+
+let date = new Date().toLocaleString("en-IN");
+
+
+let inputs=document.querySelectorAll(".healthFormBox input");
+
+let name=inputs[0]?.value || "";
+let mobile=inputs[1]?.value || "";
+
+let city="";
+
+inputs.forEach(function(i){
+
+if(i.placeholder=="City"){
+city=i.value;
+}
+
+});
+
+
+let selects=document.querySelectorAll(".healthFormBox select");
+
+let service=selects[0]?.value || "";
+let qualification=selects[1]?.value || "";
+let area=selects[2]?.value || "";
+
+
+let msg=
+"🏥 Jaipur Nurses On Call\n\n"+
+"New Health Personnel Application\n\n"+
+"Application ID: "+appID+"\n"+
+"Date: "+date+"\n\n"+
+"Name: "+name+"\n"+
+"Mobile: "+mobile+"\n"+
+"Service: "+service+"\n"+
+"Qualification: "+qualification+"\n"+
+"Preferred Area: "+area+"\n"+
+"City: "+city+"\n\n"+
+"Thank you for joining our healthcare team.";
+
+
+window.open(
+"https://wa.me/918949100258?text="+encodeURIComponent(msg),
+"_blank"
+);
+
+}
+
+}
+
+});
+
+</script>
