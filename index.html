@@ -2231,55 +2231,77 @@ btn.onclick=function(e){
 
 e.preventDefault();
 
+let appID="JNC-"+Date.now();
 
-let name=document.querySelector('input[placeholder="Full Name"]')?.value || "";
+let date=new Date().toLocaleString("en-IN");
 
-let mobile=document.querySelector('input[placeholder="Mobile Number"]')?.value || "";
+let inputs=document.querySelectorAll(".healthFormBox input");
 
-let city=document.querySelector('input[placeholder="City"]')?.value || "";
+let name=inputs[0]?.value||"";
+let mobile=inputs[1]?.value||"";
 
-let experience=document.querySelector('input[placeholder="Experience (Years)"]')?.value || "";
+let city="";
 
+inputs.forEach(function(i){
 
-let selects=document.querySelectorAll(".healthFormBox select");
+if(i.placeholder=="City"){
 
-let service="";
-let qualification="";
-
-
-selects.forEach(function(s){
-
-let options=s.innerText;
-
-if(options.includes("Staff Nurse") || options.includes("Home Care Nurse") || options.includes("Injection / Procedure Nurse") || options.includes("Physiotherapist")){
-
-service=s.value;
-
-}else{
-
-qualification=s.value;
+city=i.value;
 
 }
 
 });
 
+let selects=document.querySelectorAll(".healthFormBox select");
 
-let message =
+let service=selects[0]?.value||"";
+let qualification=selects[1]?.value||"";
+let area=selects[2]?.value||"";
+
+let msg=
+"🏥 Jaipur Nurses On Call\n\n"+
 "New Health Personnel Application\n\n"+
+"Application ID: "+appID+"\n"+
+"Date: "+date+"\n\n"+
 "Name: "+name+"\n"+
 "Mobile: "+mobile+"\n"+
 "Service: "+service+"\n"+
 "Qualification: "+qualification+"\n"+
-"Experience: "+experience+" Years\n"+
-"City: "+city;
-
+"Preferred Area: "+area+"\n"+
+"City: "+city+"\n\n"+
+"Thank you for joining our healthcare team.";
 
 window.open(
-"https://wa.me/918949100258?text="+encodeURIComponent(message),
+"https://wa.me/918949100258?text="+encodeURIComponent(msg),
 "_blank"
 );
 
+let success=document.createElement("div");
 
+success.innerHTML=
+"✅ <b>Application Successfully Completed!</b><br><br>Thank you for applying to <b>Jaipur Nurses On Call</b>.<br>Our HR Team will contact you shortly.";
+
+success.style.position="fixed";
+success.style.top="20px";
+success.style.left="50%";
+success.style.transform="translateX(-50%)";
+success.style.background="#16a34a";
+success.style.color="#fff";
+success.style.padding="18px 25px";
+success.style.borderRadius="12px";
+success.style.boxShadow="0 10px 30px rgba(0,0,0,.25)";
+success.style.zIndex="999999";
+success.style.maxWidth="90%";
+success.style.textAlign="center";
+success.style.fontSize="16px";
+
+document.body.appendChild(success);
+
+setTimeout(function(){
+
+success.remove();
+
+},3000);
 }
 
 }
