@@ -1811,3 +1811,26 @@ document.getElementById("healthPopup").style.display="none";
 
 
 </script>
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+let form = document.querySelector("#healthPopup form");
+
+if(form){
+
+form.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+alert("✅ Application Submitted Successfully!\n\nJaipur Nurses On Call team will contact you soon.");
+
+form.reset();
+
+});
+
+}
+
+});
+
+</script>
