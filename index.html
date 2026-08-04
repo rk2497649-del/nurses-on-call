@@ -1855,3 +1855,45 @@ alert("✅ Application Submitted Successfully!\n\nJaipur Nurses On Call team wil
 });
 
 </script>
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+let submitBtn = document.getElementById("submitHealth");
+
+if(submitBtn){
+
+submitBtn.onclick = function(e){
+
+e.preventDefault();
+
+let name = document.querySelector('.healthFormBox input[placeholder="Full Name"]').value;
+let mobile = document.querySelector('.healthFormBox input[placeholder="Mobile Number"]').value;
+let qualification = document.querySelector('.healthFormBox select').value;
+let experience = document.querySelector('.healthFormBox input[placeholder="Experience (Years)"]').value;
+let city = document.querySelector('.healthFormBox input[placeholder="City"]').value;
+
+
+let message =
+"New Health Personnel Application\n\n"+
+"Name: "+name+"\n"+
+"Mobile: "+mobile+"\n"+
+"Qualification: "+qualification+"\n"+
+"Experience: "+experience+" Years\n"+
+"City: "+city;
+
+
+let whatsappURL =
+"https://wa.me/918949100258?text="+encodeURIComponent(message);
+
+
+window.open(whatsappURL,'_blank');
+
+
+}
+
+}
+
+});
+
+</script>
