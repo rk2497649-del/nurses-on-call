@@ -2164,3 +2164,58 @@ categories[i].remove();
 });
 
 </script>
+<script>
+
+document.getElementById("submitHealth").onclick=function(e){
+
+e.preventDefault();
+
+let name=document.querySelector('input[placeholder="Full Name"]').value;
+
+let mobile=document.querySelector('input[placeholder="Mobile Number"]').value;
+
+let selects=document.querySelectorAll(".healthFormBox select");
+
+let service="";
+let qualification="";
+
+selects.forEach(function(s){
+
+let text=s.innerText;
+
+if(text.includes("Staff Nurse") || text.includes("Home Care Nurse") || text.includes("Injection / Procedure Nurse")){
+
+service=s.value;
+
+}else{
+
+qualification=s.value;
+
+}
+
+});
+
+
+let city=document.querySelector('input[placeholder="City"]').value;
+
+let experience=document.querySelector('input[placeholder="Experience (Years)"]').value;
+
+
+let message=
+"New Health Personnel Application\n\n"+
+"Name: "+name+"\n"+
+"Mobile: "+mobile+"\n"+
+"Service: "+service+"\n"+
+"Qualification: "+qualification+"\n"+
+"Experience: "+experience+" Years\n"+
+"City: "+city;
+
+
+window.open(
+"https://wa.me/918949100258?text="+encodeURIComponent(message),
+"_blank"
+);
+
+};
+
+</script>
