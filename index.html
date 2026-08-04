@@ -2543,38 +2543,112 @@ z-index:9999;
 ">
 🔐 Admin
 </a>
-<!-- Floating Patient Booking Button -->
-<a href="#patient-booking" id="floatingBooking">
-  🏥 Patient Booking
-</a>
+<!-- Floating Patient Booking -->
+<button onclick="openBooking()" id="bookingBtn">
+🏥 Patient Booking
+</button>
+
+<div id="bookingBox">
+<h3>Patient Booking Form</h3>
+
+<input id="pname" placeholder="Patient Name">
+<input id="page" placeholder="Age">
+<input id="pmobile" placeholder="Mobile Number">
+
+<select id="service">
+<option>Select Service</option>
+<option>Home Nursing Care</option>
+<option>ICU Care at Home</option>
+<option>Elderly Care</option>
+<option>Injection / Dressing</option>
+<option>Patient Attendant</option>
+<option>Other Medical Service</option>
+</select>
+
+<textarea id="address" placeholder="Patient Address"></textarea>
+
+<button onclick="sendWhatsApp()" id="sendBtn">
+Send Booking
+</button>
+
+</div>
+
 
 <style>
-#floatingBooking{
-  position:fixed;
-  right:20px;
-  top:120px;
-  z-index:99999;
-  background:#00c853;
-  color:white;
-  padding:14px 22px;
-  border-radius:50px;
-  font-size:16px;
-  font-weight:bold;
-  text-decoration:none;
-  box-shadow:0 5px 15px rgba(0,0,0,0.3);
-  font-family:Arial,sans-serif;
+#bookingBtn{
+position:fixed;
+right:20px;
+top:120px;
+z-index:99999;
+background:#00c853;
+color:white;
+border:none;
+padding:14px 22px;
+border-radius:50px;
+font-size:16px;
+font-weight:bold;
+box-shadow:0 5px 15px #555;
 }
 
-#floatingBooking:hover{
-  background:#009624;
+#bookingBox{
+display:none;
+position:fixed;
+top:80px;
+right:20px;
+width:300px;
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 25px #555;
+z-index:99999;
 }
 
-@media(max-width:600px){
-  #floatingBooking{
-    right:12px;
-    top:100px;
-    padding:12px 16px;
-    font-size:14px;
-  }
+#bookingBox input,
+#bookingBox select,
+#bookingBox textarea{
+width:100%;
+padding:10px;
+margin:7px 0;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+#sendBtn{
+width:100%;
+background:#25D366;
+color:white;
+border:none;
+padding:12px;
+border-radius:10px;
+font-weight:bold;
 }
 </style>
+
+
+<script>
+function openBooking(){
+document.getElementById("bookingBox").style.display="block";
+}
+
+function sendWhatsApp(){
+
+var name=document.getElementById("pname").value;
+var age=document.getElementById("page").value;
+var mobile=document.getElementById("pmobile").value;
+var service=document.getElementById("service").value;
+var address=document.getElementById("address").value;
+
+
+var msg =
+"New Patient Booking%0A%0A"+
+"Name: "+name+"%0A"+
+"Age: "+age+"%0A"+
+"Mobile: "+mobile+"%0A"+
+"Service: "+service+"%0A"+
+"Address: "+address;
+
+
+window.open("https://wa.me/918949100258?text="+msg,"_blank");
+
+}
+</script>
