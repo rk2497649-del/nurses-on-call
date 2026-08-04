@@ -1522,3 +1522,40 @@ window.onclick = function(event){
 }
 
 </script>
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+let btn = document.getElementById("joinBtn");
+let popup = document.getElementById("joinPopup");
+let close = document.querySelector(".closePopup");
+
+if(btn && popup){
+
+btn.onclick = function(){
+popup.style.display = "flex";
+};
+
+}
+
+if(close && popup){
+
+close.onclick = function(){
+popup.style.display = "none";
+};
+
+}
+
+window.onclick = function(e){
+
+if(e.target == popup){
+
+popup.style.display = "none";
+
+}
+
+}
+
+});
+
+</script>
