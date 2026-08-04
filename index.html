@@ -1501,3 +1501,24 @@ alert("Part 2 me Complete Application Form open hoga.");
 }
 
 </script>
+<script>
+
+const joinButton = document.getElementById("joinBtn");
+const popup = document.getElementById("joinPopup");
+const closeButton = document.querySelector(".closePopup");
+
+joinButton.onclick = function(){
+    popup.style.display = "flex";
+}
+
+closeButton.onclick = function(){
+    popup.style.display = "none";
+}
+
+window.onclick = function(event){
+    if(event.target == popup){
+        popup.style.display = "none";
+    }
+}
+
+</script>
